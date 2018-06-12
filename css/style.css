@@ -48,7 +48,7 @@ h1, h2, h3, p {
 }
 #showcase .bg-img {
   position: absolute;
-  background: url('../img/slide5.jpg') no-repeat center;
+  background: url('../img/it_background.jpg') no-repeat center;
   background-size: cover;
   width: 100%;
   height: 450px;
