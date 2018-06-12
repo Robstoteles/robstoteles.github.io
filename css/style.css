@@ -65,6 +65,9 @@ h1, h2, h3, p {
 }
 /*End header showcase*/
 
+.content-text p {
+  text-align: justify;
+}
 /*Section a*/
 #section-a {
   background: #eaeaea;
