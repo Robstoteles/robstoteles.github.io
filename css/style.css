@@ -16,7 +16,7 @@ html, body {
   height: 100%;
   line-height: 1.5;
   text-align: center;
-  text-transform: capitalize;
+  /*text-transform: capitalize;*/
 }
 img {
   display: block;
@@ -64,10 +64,13 @@ h1, h2, h3, p {
   padding: 0 1.5em;
 }
 /*End header showcase*/
-
+p::first-letter {
+  text-transform: capitalize;
+}
 .content-text p {
   text-align: justify;
 }
+
 /*Section a*/
 #section-a {
   background: #eaeaea;
@@ -77,7 +80,8 @@ h1, h2, h3, p {
 /*End Section a*/
 
 /*Section b*/
-#section-b {
+#section-b,
+#section-d {
   padding: 2em 1em 1em;
 }
 #section-b ul {
@@ -119,7 +123,7 @@ h1, h2, h3, p {
   background: #104E8B;
 }
 #section-d .box p span {
-  text-transform: lowercase;
+  text-transform: lowercase !important;
 }
 
 /*End section d*/
