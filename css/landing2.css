@@ -1,0 +1,158 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+body,
+html {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+img {
+    max-width: 100%;
+}
+
+form {
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+form div {
+    padding: 10px;
+}
+
+input {
+    width: 60%;
+    font-size: 1em;
+    border: 1px solid #777;
+}
+
+footer {
+    height: 200px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#navMenu {}
+
+.navbar {
+    position: fixed;
+    right: 20%;
+    top: 20%;
+    height: 150px;
+    opacity: 0.9;
+    z-index: 100;
+    margin: 0 -70% 0 0;
+    padding: 0;
+    width: 80%;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.01px;
+}
+
+.navbar a {
+    box-shadow: 3px 3px 3px #888;
+    background-color: #fff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin-top: 5px;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.navbar a:hover {
+    background-color: cornflowerblue;
+}
+
+.navbar li.active a {
+    background-color: cornflowerblue;
+}
+
+section {
+    min-height: 800px;
+    min-height: 100vh;
+    padding: 10px;
+    padding-top: 5%;
+    background-size: cover;
+    background-position: center center;
+}
+
+section:nth-child(even) {
+    background-color: #ddd;
+}
+
+section h2 {
+    background-color: aliceblue;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+section article {
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+#home {
+    background-image: url('http://lorempixel.com/1200/800/city');
+    background-color: chartreuse;
+}
+
+#about {
+    background-image: url('http://lorempixel.com/1200/600/business');
+}
+
+#portfolio article p:first-child {
+    width: 100%;
+    background-color: aqua;
+}
+
+#portfolio article p {
+    display: inline-block;
+    width: 48%;
+    min-height: 200px;
+}
+
+@media screen and (max-width:1600px) {
+    .navbar {
+        right: 12%;
+        width: 50px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .navbar {
+        right: 15px;
+        width: 50px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #portfolio article p {
+        width: 100%;
+    }
+}
